@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>steph grafix</title>
+</head>
+<body>
+    <div id="id"></div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <button id="tab-1" class="tab-item tab-border" >home</button>
+         
+        <button id="tab-2" class="tab-item tab-border">About </button>
+         
+        <!-- <button id="tab-3" class="tab-item tab-border">
+            My project
+        </button> -->
+        <button id="tab-4" class="tab-item tab-border">
+            Services
+        </button>
+        <button id="tab-5" class="tab-item tab-border">
+            Contact us
+        </button>
+
+    
+             <!-- Rounded switch -->
+          <label class="switchbtn" >
+            <input type="checkbox" onclick=" myFunction()" class =  "darkmodebtn" >
+            <div class="slider round"></div>
+          </label>
+        
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()" class="openbtn">home<a href="" class="card"><i class="fa fa-bars " style="color: rgb(248, 19, 38); font-size: 40px;" ></i></a></span>
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+        <section class="tabs">
+            <div class="container">
+                
+                <button id="tab-1" class="tab-item tab-border">
+                    <i class="fa fa-shopping-basket"></i></i>
+                    <p class="hide-sm">Home</p>
+                </button>
+                 
+                <button id="tab-2" class="tab-item ">
+                    <i class="fa fa-shopping-basket"></i></i>
+                    <p class="hide-sm">About</p>
+                </button>
+                 
+                <!-- <button id="tab-3" class="tab-item ">
+                    <i class="fa fa-shopping-basket"></i></i>
+                    <p class="hide-sm">My project</p>
+                </button> -->
+                <button id="tab-4" class="tab-item ">
+                    <i class="fa fa-shopping-basket"></i></i>
+                    <p class="hide-sm">about</p>
+                </button>
+                <button id="tab-5" class="tab-item ">
+                    <i class="fa fa-shopping-basket"></i></i>
+                    <p class="hide-sm">Contact </p>
+                </button>
+                
+               
+            </div> 
+      </section>
+        
+      <section class="tab-content">
+          <div class="container">
+              <div id="tab-1-content" class="tab-content-item show">
+                  <div class="tab-1-content-inner">
+                      <div>
+                        <h1 class="p-tab1">Hi</h1>
+                        <p class="text-lg">I'm tosin  Graphix desiner</p>
+                        <p class="text-lg">i design & build user interfaces. </p>
+                    
+                      </div>
+                      <div>
+                          <img class="homepageimg" src="images/business card mock - Copy - Copy - Copy - Copy - Copy.jpg" alt="">
+                      </div>
+                  </div>
+              </div>
+              <div id="tab-2-content" class="tab-content-item">
+                 
+              <div class="container">
+<aside class="contact-right">
+    <img src="mywebsite/images/download (2).png" alt="my image">
+</aside>
+               <aside class="contact-left">
+                <h2 class="heading-about">ABOUT</h2>
+                <h1 class="heading-about">onyebuchi paul</h1>
+                <p class="p-about">Front-end developers are experts in the practice of creating HTML, CSS, JavaScript, and more for a website or web application while keeping an eye on UI and UX. The questions presented in this guide help identify those front-end developers with the experience to produce masterful results.</p>
+               </aside>
+              </div>
+              </div>
+              <!-- <div id="tab-3-content" class="tab-content-item">
+                  <div class="text-center">
+                      <p class="text-lg">chose onr plan an watch everything on netflix</p>
+                      <a href="" class="btn btn-lg"> watch free for 30days</a>
+                  </div>
+                  
+              </div> -->
+              <div id="tab-4-content" class="tab-content-item">
+                <span class="skill-btn"> <i class="fa fa-cog"></i>SKILLS</span>
+                <ul>
+                    <li>Html</li>
+                    <progress min = "0" max="100" value="75"></progress>
+                    <li>Css</li>
+                    <progress min = "0" max="100" value="70"></progress>
+                    <li>Sass</li>
+                    <progress min = "0" max="100" value="90"></progress>
+                     <li>Bootstrap</li>
+                    <progress min = "0" max="100" value="80"></progress>
+                    <li>javascript</li>
+                    <progress min = "" max="100" value="69"></progress>
+                    <li>React.js</li>
+                    <progress min = "0" max="100" value="60"></progress>
+                    <li>MYSQL</li>
+                    <progress min = "0" max="100" value="730"></progress>
+                    <li>PHP</li>
+                    <progress min = "0" max="100" value="63"></progress>
+                    <li>Git</li>
+                    <progress min = "0" max="100" value="70"></progress>
+                </ul>
+                
+            </div>
+            <div id="tab-5-content" class="tab-content-item">
+             <div class="container">
+                <h1>CONTACT US</h1>
+                <p>Contact me and we'll get back to you within 24 hours.</p>
+         <ul>
+       <li> <i class="fa fa-phone" style="margin-right: 5px;"></i>070-324-938-55</li>
+       <li> <i class="fa fa-envelope" style="margin-right: 5px;"></i>onyebuchiokofu@gmail.com</li>
+          <li><i class="fa fa-twitter"></i></li>
+          <li><i class="fa fa-git-square"></i></li>
+    </ul>
+             </div>
+       
+                
+            </div>
+
+              
+          </div>
+        
+    
+      </section>
+      </div>
+    
+  <script src="app.js"></script>
+</body>
+</html>
