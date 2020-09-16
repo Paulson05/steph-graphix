@@ -192,12 +192,13 @@ ul li{
     margin: auto */
 margin-top:400px;
 position: relative;
+width: 100%;
 }
 
 .mySlides {
     display: none;
-  
-  width: 90%;
+  margin-left: 120px;
+  width: 80%;
 
 
   /* border: solid 1px black; */
@@ -238,16 +239,16 @@ position: relative;
 }
 
 .text {
-    color: #e9dcdc;
+    color: #d47979;
     font-size: 35px;
     padding-top: 12px;
   padding-bottom: 12px;
     position: absolute;
-    top: 700px;
+    top: 800px;
     overflow: hidden;
     margin: auto;
     border: 1px solid black;
-    width: 50%;
+    width: 90%;
     text-align: center;
     /* background-color: #222428 */
 }
@@ -262,7 +263,7 @@ position: relative;
 
 .dot {
    position: relative;
-    bottom: -350px;
+    bottom: -340px;
     cursor: pointer;
     height: 25px;
     width: 25px;
@@ -274,7 +275,7 @@ position: relative;
 }
 
 .active, .dot:hover {
-    background-color: #d30e0e
+    background-color: #320ed3
 }
 progress {
     width: 70%;
@@ -306,83 +307,101 @@ float: right;
     line-height: 40px;
 
 }
-   @media(max-width:900px){
-   body{
-    background-color: yellow;
-   }
-   #mySidenav{
-    display: block;
-}
-   #main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-.container button{
-    margin-left: 90px;
-    width: 13rem;
-    font-size: 1.4rem;
-    
-}
-.tab-item{
-    display: block;
-    margin-top: 20px;
-    width: 100%;
-    font-size: 20px;
-    height: 40px;
-}
-   .tabs{
-    
+.second-tabs{
+    background-color: rgb(16, 116, 16);
     padding-top: 1rem;
-    border-bottom: 3px solid rgb(14, 13, 13);
-position: absolute;
-}
-.tabs .container{
-    display:inline-block;
-}
-.tab-content{
-    padding:3rem 0;
-    width: 100%;
-    height: 700px;
-    position: relative;
+    margin-top: 20rem;
     
-    color:white;
-    background: rgb(209, 38, 38) ;
+    border-bottom: 3px solid rgb(14, 13, 13);
+     
 }
-.container{
-    width: 100%;
-    margin: auto;
-    padding-top: 20px;
-    text-align: center;
-    list-style: none;
+.second-tabs .container{
+    display:grid;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:1rem;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+   
 }
-  
-.contact-right{
-float: none;
-position: relative;
-top: 200px;
-right: 100px;
-} 
-.contact-left{
-    float: none;
-  width: 90%;
-     position: absolute;
-    line-height: 40px;
-    left: 20px;
-
+.second-tabs p{
+    font-size: 1.3rem;
+    padding-top:0.5rem;
+    
 }
-.heading-about{
-    font-size: 43px;
- }
- .p-about{
-     font-size: 20px;
-     font-style: italic;
- }
- .skill-btn{
-     font-size: 50px;
- }
-
-.openbtn{
-    display:block;
+.second-tabs .container > div{
+    padding:1.5em 0;
 }
-
+.second-tabs .container > div:hover{
+    color: rgb(245, 239, 239);
+    cursor:pointer;
+}
+.second-tab-border{
+    border-bottom:2px solid rgb(228, 215, 215);
+}   
+.second-tab-content{
+     padding:3rem 0;
+     color:white;
+     background-color: black ;
+}
+#second-tab-1-content,
+#second-tab-2-content,
+#second-tab-3-content,
+#second-tab-4-content
+{
+    display:none;
+}
+.second-show{
+    display:block !important;
+}
+#second-tab-1-content .second-tab-1-content-bottom{
+   display:grid;
+   grid-template-columns:repeat(3, 1fr);
+   grid-gap  :2rem;
+   align-items: center;
+  justify-content: center  ; 
+  text-align: center ;
    }
+ 
+   #second-tab-2-content .second-tab-2-content-bottom{
+       display:grid;
+       grid-template-columns:repeat(3, 1fr);
+       grid-gap  :2rem;
+       align-items: center;
+      justify-content: center  ; 
+      text-align: center ;
+   }
+   #second-tab-3-content .second-tab-3-content-bottom{
+       display:grid;
+       grid-template-columns:repeat(3, 1fr);
+       grid-gap  :2rem;
+       align-items: center;
+      justify-content: center  ; 
+      text-align: center ;
+   }
+   #second-tab-4-content .second-tab-4-content-bottom{
+       display:grid;
+       grid-template-columns:repeat(3, 1fr);
+       grid-gap  :2rem;
+       align-items: center;
+      justify-content: center  ; 
+      text-align: center ;
+   }
+   .footer{
+    max-width:75%;
+    margin:1rem auto;
+    overflow: auto;
+    background: chartreuse;
+} 
+   
+
+    .footer p{
+        margin-bottom:1.5rem;
+        font-size: 20px;
+        text-align: center;
+    
+@media(max-width:700px){
+    
+
+ }

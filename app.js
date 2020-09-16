@@ -100,3 +100,23 @@ resume = () =>{
   clearInterval(myTimer);
   myTimer = setInterval(function(){plusSlides(slideIndex)}, 3000);
 }
+
+const secondtabitems = document.querySelectorAll(".second-tab-item");
+
+const secondtabContentitems = document.querySelectorAll(".second-tab-content-item");
+
+function secondselectItem(e){
+    secondremoveBorder();
+    secondremoveShow();
+ this.classList.add("second-tab-border");
+  const secondtabContentitems = document.querySelector(`#${this.id}-content`);
+  secondtabContentitems.classList.add("second-show");
+}
+function secondremoveBorder(){
+    secondtabitems.forEach(item =>item.classList.remove("second-tab-border"));
+}
+function secondremoveShow(){
+    secondtabContentitems.forEach(item =>item.classList.remove("second-show"));
+}
+secondtabitems.forEach(item => item.addEventListener
+    ("click", secondselectItem));
