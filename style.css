@@ -1,9 +1,11 @@
-
+body{
+    background: darkblue;
+}
     #id{
-        background-color: rgb(29, 29, 197);
+        background-color: rgb(104, 104, 238);
         /* clip-path:polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0) ; */
         width: 100%;
-        
+    overflow: hidden;
         height: 100%;
         position: absolute;
         z-index: -1;
@@ -186,6 +188,10 @@ ul li{
     -ms-transition: 0.7s;
     -o-transition: 0.7s;
 }
+.showcase-content{
+/* background: chartreuse;
+width:100%; */
+}
 .slideshow-container {
     /* max-width: 100%;
     position: relative;
@@ -308,7 +314,7 @@ float: right;
 
 }
 .second-tabs{
-    background-color: rgb(16, 116, 16);
+    /* background-color: rgb(16, 116, 16); */
     padding-top: 1rem;
     margin-top: 20rem;
     
@@ -343,7 +349,7 @@ float: right;
 .second-tab-content{
      padding:3rem 0;
      color:white;
-     background-color: black ;
+     /* background-color: black ; */
 }
 #second-tab-1-content,
 #second-tab-2-content,
@@ -465,21 +471,106 @@ float: right;
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-}
+} 
    .footer{
     max-width:75%;
     margin:1rem auto;
     overflow: auto;
-    background: chartreuse;
+   
 } 
    
 
     .footer p{
         margin-bottom:1.5rem;
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
-    
+    }
+    .footer span{
+       color :red;
+
+       font-style: italic;
+    }
 @media(max-width:700px){
     
 
  }
+ @media(max-width:900px){
+    body{
+     background-color: yellow;
+    }
+    #mySidenav{
+     display: block;
+ }
+    #main {
+     transition: margin-left .5s;
+     padding: 20px;
+ }
+ .container button{
+     margin-left: 90px;
+     width: 13rem;
+     font-size: 1.4rem;
+     
+ }
+ .tab-item{
+     display: block;
+     margin-top: 20px;
+     width: 100%;
+     font-size: 20px;
+     height: 40px;
+ }
+    .tabs{
+     
+     padding-top: 1rem;
+     border-bottom: 3px solid rgb(14, 13, 13);
+ position: absolute;
+ }
+ .tabs .container{
+     display:inline-block;
+ }
+ .tab-content{
+     padding:3rem 0;
+     width: 100%;
+     height: 700px;
+     position: relative;
+     
+     color:white;
+     background: rgb(209, 38, 38) ;
+ }
+ .container{
+     width: 100%;
+     margin: auto;
+     padding-top: 20px;
+     text-align: center;
+     list-style: none;
+ }
+   
+ .contact-right{
+ float: none;
+ position: relative;
+ top: 200px;
+ right: 100px;
+ } 
+ .contact-left{
+     float: none;
+   width: 90%;
+      position: absolute;
+     line-height: 40px;
+     left: 20px;
+ 
+ }
+ .heading-about{
+     font-size: 43px;
+  }
+  .p-about{
+      font-size: 20px;
+      font-style: italic;
+  }
+  .skill-btn{
+      font-size: 50px;
+  }
+ 
+ .openbtn{
+     display:block;
+ }
+ 
+    }
