@@ -283,25 +283,7 @@ width: 100%;
 .active, .dot:hover {
     background-color: #320ed3
 }
-progress {
-    width: 70%;
-  height: 20px;
-  color: #3fb6b2;
-  background: #efefef;
-  
-  }
-  
-  progress::-webkit-progress-bar {  
-   background: #efefef;
-  }
-  
-  progress::-webkit-progress-value {
-    background: #3fb6b2;
-  }
-  progress::-moz-progress-bar {
-    color: #3fb6b2;
-   background: #efefef;
-  }
+
   
 .contact-right{
 float: right;
@@ -344,7 +326,7 @@ float: right;
     cursor:pointer;
 }
 .second-tab-border{
-    border-bottom:2px solid rgb(228, 215, 215);
+    border-bottom:3px solid rgb(241, 14, 14);
 }   
 .second-tab-content{
      padding:3rem 0;
@@ -484,6 +466,7 @@ float: right;
         margin-bottom:1.5rem;
         font-size: 30px;
         text-align: center;
+        color:black;
     }
     .footer span{
        color :red;
@@ -495,8 +478,12 @@ float: right;
 
  }
  @media(max-width:900px){
-    body{
-     background-color: yellow;
+     body{
+    background: blue;
+     }
+    #id{
+        background-color: tomato;
+        top:0;
     }
     #mySidenav{
      display: block;
@@ -504,7 +491,11 @@ float: right;
     #main {
      transition: margin-left .5s;
      padding: 20px;
- }
+     -webkit-transition: margin-left .5s;
+     -moz-transition: margin-left .5s;
+     -ms-transition: margin-left .5s;
+     -o-transition: margin-left .5s;
+}
  .container button{
      margin-left: 90px;
      width: 13rem;
@@ -534,7 +525,10 @@ float: right;
      position: relative;
      
      color:white;
-     background: rgb(209, 38, 38) ;
+     /* background: rgb(42, 35, 100) ; */
+ }
+ .tabs .container{
+     display: none;
  }
  .container{
      width: 100%;
@@ -561,6 +555,16 @@ float: right;
  .heading-about{
      font-size: 43px;
   }
+  .text-lg{
+    color: rgb(227, 238, 238);
+   font-size: 30px; 
+}
+.p-tab1{
+    
+    color: rgb(226, 226, 238);
+    text-align: center;
+    font-size: 45px;
+}
   .p-about{
       font-size: 20px;
       font-style: italic;
@@ -572,5 +576,95 @@ float: right;
  .openbtn{
      display:block;
  }
+ .slideshow-container {
+    /* max-width: 100%;
+    position: relative;
+    margin: auto */
+margin-top:300px;
+position: relative;
+width: 100%;
+}
+.text {
+    color: #d47979;
+    font-size: 35px;
+    padding-top: 12px;
+  padding-bottom: 12px;
+    position: absolute;
+    top: 25rem;
+    overflow: hidden;
+    margin: auto;
+    border: 1px solid black;
+    width: 70%;
+    text-align: center;
+    /* background-color: #222428 */
+}
+.next {
+    right: 10px;
+    top: 150px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+    left: 10px;
+    top: 150px;
+    border-radius: 3px 3px 3px 3px
+}
+.dot {
+    position: relative;
+     bottom: -60px;
+     cursor: pointer;
+     height: 25px;
+     width: 25px;
+     margin: 0 2px;
+     background-color: rgb(219, 214, 214);
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color .6s ease
+ }
+ .active, .dot:hover {
+    background-color: #d30e0e
+}
+ .second-tabs{
+
+    padding-top: 1rem;
+    margin-top: 6rem;
+    border-bottom: 3px solid rgb(245, 235, 235);
+     width: 950px;
+     color:red;
+}
+
+   .second-tabs .container{
+    display:grid;
+   color:red;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    margin-left: 1px;
+    margin-right:40px;
+    width: 200px !important;
+}
+
+.second-tabs .container {
+    width:600px !important;
+    
+}
  
+ #second-tab-1-content .second-tab-1-content-bottom, #second-tab-3-content .second-tab-3-content-bottom,  #second-tab-4-content .second-tab-4-content-bottom, #second-tab-2-content .second-tab-2-content-bottom{
+        
+    display:grid;
+    grid-template-columns:  1fr;
+   margin-top: 50px;
+    display:block;
+    text-align:center;
+
+    
+   }
+   .second-tab-1-content-bottom >div,
+   .second-tab-2-content-bottom >div,
+   .second-tab-3-content-bottom >div,
+   .second-tab-4-content-bottom >div{
+       margin-top:10px;
+   }
+  
     }
