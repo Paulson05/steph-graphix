@@ -1,6 +1,11 @@
 body{
     background: darkblue;
 }
+h2{
+    text-transform: capitalize;
+    font-size: large;
+    font-style: italic;
+}
     #id{
         background-color: rgb(104, 104, 238);
         /* clip-path:polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0) ; */
@@ -154,6 +159,7 @@ ul li{
       align-items: center;
       justify-content: center  ;
       text-align: center;
+      
    }
    #tab-2-content .tab-2-content-top{
        display:grid;
@@ -169,6 +175,12 @@ ul li{
        align-items: center;
       justify-content: center  ; 
       text-align: center ;
+   }
+   .img-box{
+       border:2px solid black;
+   }
+   #myImg{
+padding-top: 5px;
    }
     .dark-mode {
     
@@ -339,6 +351,8 @@ float: right;
 #second-tab-4-content
 {
     display:none;
+    border:1px solid black;
+ padding:5px;
 }
 .second-show{
     display:block !important;
@@ -665,6 +679,9 @@ width: 100%;
    .second-tab-3-content-bottom >div,
    .second-tab-4-content-bottom >div{
        margin-top:10px;
+   }
+   #myImg{
+       width:80%;
    }
   
     }
