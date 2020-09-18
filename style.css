@@ -220,7 +220,7 @@ width:100%; */
     /* max-width: 100%;
     position: relative;
     margin: auto */
-margin-top:400px;
+margin-top:300px;
 position: relative;
 width: 100%;
 }
@@ -293,7 +293,7 @@ width: 100%;
 
 .dot {
    position: relative;
-    bottom: -340px;
+    bottom: -60px;
     cursor: pointer;
     height: 25px;
     width: 25px;
@@ -309,20 +309,11 @@ width: 100%;
 }
 
   
-.contact-right{
-float: right;
-}
-.contact-left{
-    float: left;
-    width: 60%;
-  
-    line-height: 40px;
 
-}
 .second-tabs{
     /* background-color: rgb(16, 116, 16); */
     padding-top: 1rem;
-    margin-top: 20rem;
+    margin-top: 2rem;
     
     border-bottom: 3px solid rgb(14, 13, 13);
      
